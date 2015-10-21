@@ -1,0 +1,95 @@
+\documentclass{article}
+
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{subfigure} 
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{icml2014} 
+
+%%%% Extra Packages: Drawing PGMs
+\usepackage{tikz}
+\usetikzlibrary{fit,positioning}
+%For bold 
+\usepackage{bm}
+\newcommand*{\B}[1]{\ifmmode\bm{#1}\else\textbf{#1}\fi}
+%for color
+\usepackage{color}
+\usepackage{bbm}  % indicator function render
+
+
+\urldef{\mailsa}\path|{taygunkekec}@gmail.com|
+\urldef{\mailsb}\path||
+\urldef{\mailsc}\path||
+\newcommand{\keywords}[1]{\par\addvspace\baselineskip
+\noindent\keywordname\enspace\ignorespaces#1}
+
+
+\icmltitlerunning{Two Column Latex Figure Generation with Python}
+
+\begin{document}
+
+\twocolumn[
+\icmltitle{Two Column Latex Figure Generation with Python}
+
+\icmlauthor{Your Name}{email@yourdomain.edu}
+\icmladdress{Your Fantastic Institute,
+            314159 Pi St., Palo Alto, CA 94306 USA}
+\icmlauthor{Your CoAuthor's Name}{email@coauthordomain.edu}
+\icmladdress{Their Fantastic Institute,
+            27182 Exp St., Toronto, ON M6H 2T1 CANADA}
+
+\icmlkeywords{python, latexify}
+
+\vskip 0.3in
+]
+
+
+% first the title is needed
+\title{\centering{Two Column Latex Figure Generation with Python}}
+
+% the name(s) of the author(s) follow(s) next
+\author{Taygun Keke\c{c}}
+
+\begin{abstract}
+Dummy tex file with ICML format to test two-column figure generation.  
+\end{abstract}
+
+\section{Introduction}
+Dummy tex file with ICML format to test two-column figure generation.
+Dummy tex file with ICML format to test two-column figure generation.
+Dummy tex file with ICML format to test two-column figure generation.
+Dummy tex file with ICML format to test two-column figure generation.
+
+\begin{figure}
+\centering \includegraphics[width=0.5\textwidth]{image1.pdf}
+\caption{Scaled down of the originial matplotlib plot. Now, the text looks very small.}
+\label{image1}
+\end{figure}
+
+\begin{figure}
+\centering \includegraphics[width=0.5\textwidth]{image2.pdf}
+\caption{LaTeXified plot :)}
+\label{image2}
+\end{figure}
+
+\section{creating bars}
+\begin{figure}
+\centering \includegraphics[width=0.5\textwidth]{bar1.pdf}
+\caption{Scaled down of the originial matplotlib plot. Now, the text looks very small.}
+\label{image1}
+\end{figure}
+
+\begin{figure}
+\centering \includegraphics[width=0.5\textwidth]{bar2.pdf}
+\caption{LaTeXified plot :)}
+\label{image2}
+\end{figure}
+
+\section*{Appendix} 
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

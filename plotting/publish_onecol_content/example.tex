@@ -1,0 +1,84 @@
+%\documentclass[runningheads,a4paper,draft]{llncs}
+\documentclass[runningheads,a4paper]{llncs}
+
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{subfigure} 
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{tikz}				% drawing PGMs
+\usetikzlibrary{fit,positioning} % needed for some reason..
+\usepackage{bm}					% bold mathematics
+\usepackage{color} 				%for color
+\usepackage{bbm}  				% indicator function render
+\usepackage{booktabs} 			% for using toprule, bottomrule commands for tables
+\usepackage{amsmath} 			% long equations
+
+%%%%%%%%%%%% Definitions %%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{tocdepth}{3}
+%Graphical Model Macros
+\newcommand{\gmcsize}{5mm}
+\newcommand{\gmcoffset}{15mm}
+%Bold Math
+\newcommand*{\B}[1]{\ifmmode\bm{#1}\else\textbf{#1}\fi}
+%Author comments
+\newcommand{\todo}[1]{{\textcolor[rgb]{0,.65,0}{[[ #1 ]]}}}
+\newcommand{\taygun}[1]{\textcolor[rgb]{0,0.4,0.8}{\textbf{[TA] #1}}}
+\newcommand{\david}[1]{\textcolor[rgb]{0,0.3,0}{\textbf{[DT] #1}}}
+\newcommand{\laurens}[1]{\textcolor[rgb]{0.8,0.4,0.0}{\textbf{[LVD] #1}}}
+%Math commands
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+% Author Information etc.
+\urldef{\mailsa}\path|{taygunkekec}@gmail.com|
+\urldef{\mailsb}\path||
+\urldef{\mailsc}\path||
+\newcommand{\keywords}[1]{\par\addvspace\baselineskip
+\noindent\keywordname\enspace\ignorespaces#1}
+
+\begin{document}
+
+\mainmatter  % start of an individual contribution
+
+% first the title is needed
+\title{\centering{Dummy Document for One Col Fig}}
+
+% the name(s) of the author(s) follow(s) next
+\author{Taygun Keke\c{c}}
+%
+\authorrunning{Taygun Keke\c{c}} % (feature abused for this document to repeat the title also on left hand pages)
+
+\institute{Pattern Recognition Bioinformatics Laboratory,\\ Delft University of Technology, The Netherlands\\
+\mailsa\\
+\mailsb\\
+\mailsc\\
+%\url{http://sabanciuniv.edu}
+}
+
+\toctitle{Dummy Document for One Col Fig}
+\maketitle
+
+
+\newpage
+
+\section{Dummy Section for One Col Fig}
+dummy text dummy text dummy text dummy text dummy text dummy text 
+\begin{figure}
+\centering \includegraphics{image1.pdf}
+\caption{Scaled down of the originial matplotlib plot. Now, the text looks very small.}
+\label{image1}
+\end{figure}
+
+\begin{figure}
+\centering \includegraphics{image2.pdf}
+\caption{LaTeXified plot :)}
+\label{image2}
+\end{figure}
+dummy text dummy text dummy text dummy text dummy text dummy text 
+
+
+
+\end{document}
