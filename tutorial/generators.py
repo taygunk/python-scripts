@@ -1,0 +1,23 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Oct 21 12:18:58 2015
+
+@author: solid
+"""
+
+# --------------- using generators ------------------------------------------ #
+import random
+
+def lottery():
+    # returns 6 numbers between 1 and 40
+    for i in xrange(6):
+        yield random.randint(1, 40)
+
+    # returns a 7th number between 1 and 15
+    yield random.randint(1,15)
+
+for random_number in lottery():
+    print "And the next number is... %d!" % random_number
+
+
+
