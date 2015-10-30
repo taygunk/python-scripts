@@ -43,3 +43,17 @@ def hello(name, loud=False):
 
 hello('Bob') # Prints "Hello, Bob"
 hello('Fred', loud=True)  # Prints "HELLO, FRED!"
+
+# --------------- Closures in python ---------------------------------------- #
+def example_func(number):
+    funcField = 10;
+
+    # define the inner function ...
+    def insider(closureParam):
+        print('closure accesses funcField ' + str(funcField))
+        print('closure has param: ' + str(closureParam));
+    # ... which is returned by the factory function
+    
+    insider(number)
+
+example_func(50);
